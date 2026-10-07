@@ -1612,7 +1612,7 @@ video {
 
 .contact-foot {
   display: grid;
-  grid-template-columns: 1fr 1fr auto auto;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) auto auto;
   align-items: end;
   gap: 45px;
   padding-top: 25px;
@@ -1695,8 +1695,10 @@ video {
   }
 
   .contact-foot {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .contact-foot .copyright { grid-column: span 2; }
 }
 
 @media (max-width: 760px) {
@@ -1900,7 +1902,8 @@ video {
     gap: 22px;
   }
 
-  .copyright {
+  .contact-foot .copyright {
+    grid-column: auto;
     margin-top: 18px !important;
   }
 

@@ -361,9 +361,12 @@ export default function App() {
               <a href="mailto:19550232483@163.com">19550232483@163.com</a>
             </div>
             <div>
-              <span>PHONE / WECHAT</span>
+              <span>PHONE</span>
               <a href="tel:19550232483">19550232483</a>
-              <p>微信 / lxh19550232483</p>
+            </div>
+            <div>
+              <span>WECHAT</span>
+              <p>lxh19550232483</p>
             </div>
             <p className="copyright">© 2026 LIU XUNHAO. BUILT WITH CURIOSITY.</p>
             <a href="#home" className="back-top">
