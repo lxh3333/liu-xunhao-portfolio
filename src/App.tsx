@@ -230,8 +230,8 @@ export default function App() {
             <div className="home-ghost-word" aria-hidden="true">AI</div>
             <div className="home-orbit">
               <div className="home-disc home-disc--accent"><span>01</span><b>HUMAN<br />FIRST.</b><small>从人的需求出发，<br />设计有意义的 AI 体验。</small></div>
-              <div className="home-disc home-disc--image home-disc--image-one" aria-hidden="true"><span className="motion-image-drift"><span className="motion-image-reveal"><img src="/hero-mono-portrait.webp" alt="" loading={homeEntry ? "eager" : "lazy"} fetchPriority={homeEntry ? "high" : "auto"} decoding="async" /></span></span></div>
-              <div className="home-disc home-disc--image home-disc--image-two" aria-hidden="true"><span className="motion-image-drift"><span className="motion-image-reveal"><img src="/hero-space-poster.webp" alt="" loading={homeEntry ? "eager" : "lazy"} fetchPriority={homeEntry ? "high" : "auto"} decoding="async" /></span></span></div>
+              <div className="home-disc home-disc--image home-disc--image-one" aria-hidden="true"><span className="motion-image-drift"><span className="motion-image-reveal"><img src={`${import.meta.env.BASE_URL}hero-mono-portrait.webp`} alt="" loading={homeEntry ? "eager" : "lazy"} fetchPriority={homeEntry ? "high" : "auto"} decoding="async" /></span></span></div>
+              <div className="home-disc home-disc--image home-disc--image-two" aria-hidden="true"><span className="motion-image-drift"><span className="motion-image-reveal"><img src={`${import.meta.env.BASE_URL}hero-space-poster.webp`} alt="" loading={homeEntry ? "eager" : "lazy"} fetchPriority={homeEntry ? "high" : "auto"} decoding="async" /></span></span></div>
               <h1 className="home-orbit-title" aria-label="LIU XUNHAO">
                 <div className="motion-title-mask"><div className="motion-title-content">
                 <TechText text="LIU XUNHAO" fontFamily="Space Grotesk" fontWeight={600} fontSize={120} letterSpacing={0} color="#ffffff" accentColor="#ed963e" reveal="letter" dashLength={4} dashGap={2} specks={15} sweep />
@@ -244,17 +244,17 @@ export default function App() {
             <div className="home-feature-motion">
             <BorderGlow className="home-feature-card" href="#about">
               <div><span>01 / IDENTITY</span><strong>理解人的需求，<br />定义值得解决的问题。</strong><em>了解更多 <Arrow diagonal /></em></div>
-              <div className="home-card-thumb home-card-thumb--human"><img src="/hero-pop-art.webp" alt="" loading="lazy" decoding="async" /></div>
+              <div className="home-card-thumb home-card-thumb--human"><img src={`${import.meta.env.BASE_URL}hero-pop-art.webp`} alt="" loading="lazy" decoding="async" /></div>
             </BorderGlow>
             </div><div className="home-feature-motion">
             <BorderGlow className="home-feature-card" href="#archive">
               <div><span>02 / PRACTICE</span><strong>从产品架构到<br />动态 Prompt 的实践。</strong><em>查看经历 <Arrow diagonal /></em></div>
-              <div className="home-card-thumb home-card-thumb--type"><img src="/hero-playful-type.webp" alt="" loading="lazy" decoding="async" /></div>
+              <div className="home-card-thumb home-card-thumb--type"><img src={`${import.meta.env.BASE_URL}hero-playful-type.webp`} alt="" loading="lazy" decoding="async" /></div>
             </BorderGlow>
             </div><div className="home-feature-motion">
             <BorderGlow className="home-feature-card" href="#work">
               <div><span>03 / PORTFOLIO</span><strong>作品持续整理，<br />探索仍在发生。</strong><em>查看作品集 <Arrow diagonal /></em></div>
-              <div className="home-card-thumb home-card-thumb--community"><img src="/hero-community.webp" alt="" loading="lazy" decoding="async" /></div>
+              <div className="home-card-thumb home-card-thumb--community"><img src={`${import.meta.env.BASE_URL}hero-community.webp`} alt="" loading="lazy" decoding="async" /></div>
             </BorderGlow>
             </div>
           </div>

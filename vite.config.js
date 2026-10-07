@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: process.env.GITHUB_ACTIONS ? '/liu-xunhao-portfolio/' : '/',
+  base: process.env.DEPLOY_BASE || '/',
   server: { host: '127.0.0.1', port: 5174, strictPort: true },
 })
