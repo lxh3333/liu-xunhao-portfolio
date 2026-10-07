@@ -96,7 +96,8 @@ export default function usePortfolioMotion(rootRef: RefObject<HTMLElement | null
           };
           group.dataset.motionState = "waiting";
           sequences.set(group, timeline);
-          ScrollTrigger.create({ trigger: group, start: "top 82%", once: true, onEnter: play,
+          // Footer groups must reveal before the page reaches its scroll limit.
+          ScrollTrigger.create({ trigger: group, start: "clamp(top 82%)", once: true, onEnter: play,
             // Fast scrolling/hash jumps must not leave skipped sections concealed;
             // the same timeline still completes at its own pace.
             onLeave: play,

@@ -355,18 +355,18 @@ export default function App() {
               <Arrow diagonal />
             </a>
           </div>
-          <div className="contact-foot" data-motion-group>
-            <div data-motion-body>
+          <div className="contact-foot">
+            <div>
               <span>EMAIL</span>
               <a href="mailto:19550232483@163.com">19550232483@163.com</a>
             </div>
-            <div data-motion-body>
+            <div>
               <span>PHONE / WECHAT</span>
               <a href="tel:19550232483">19550232483</a>
               <p>微信 / lxh19550232483</p>
             </div>
-            <p className="copyright" data-motion-body>© 2026 LIU XUNHAO. BUILT WITH CURIOSITY.</p>
-            <a href="#home" className="back-top" data-motion-body>
+            <p className="copyright">© 2026 LIU XUNHAO. BUILT WITH CURIOSITY.</p>
+            <a href="#home" className="back-top">
               TOP <Arrow />
             </a>
           </div>
