@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.npm-cache/
+sync-backup-*/
+.env
+.env.*
+!.env.example
+*.log

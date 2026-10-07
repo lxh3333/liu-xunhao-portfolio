@@ -1,0 +1,34 @@
+.page-grainient-preview.grainient-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.interior-pages { position: relative; isolation: isolate; background: #101212; }
+.page-background { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.page-background-canvas.grainient-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  overflow: hidden;
+  pointer-events: none;
+  background: linear-gradient(120deg, #71513c, #344c43 58%, #101212);
+}
+.page-background-canvas::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(110deg, #0d0d0d55, #0d0d0d22);
+}
+.page-background--continuous .page-background-canvas { position: sticky; top: 0; height: 100svh; }
+.interior-pages .about,
+.interior-pages .archive-section,
+.interior-pages .work-section.portfolio-section,
+.interior-pages .contact { background: transparent; }
+.portfolio-detail.portfolio-detail--grainient { isolation: isolate; background: #101212; }

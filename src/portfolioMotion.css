@@ -1,0 +1,12 @@
+.motion-line-mask { display: block; overflow: clip; overflow-clip-margin: .12em; }
+.motion-line { display: block; transform-origin: left center; }
+.motion-title-mask, .motion-title-content { width: 100%; height: 100%; }
+.motion-title-mask { overflow: clip; overflow-clip-margin: 22px; }
+.motion-title-content { transform-origin: center; }
+.home-feature-motion, .archive-card-motion { min-width: 0; }
+.home-feature-motion > .home-feature-card { height: 100%; }
+.motion-image-drift, .motion-image-reveal { display: block; width: 100%; height: 100%; transform-origin: center; }
+.motion-image-drift { position: relative; }
+.motion-image-reveal { overflow: hidden; }
+.home-disc--image .motion-image-reveal { border-radius: 50%; }
+.ag-panel__entrance { position: absolute; inset: 0; display: block; }
